@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Buddy%20Bot&fontSize=32)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Game%20Buddy%20Bot&fontSize=32)
 친구들과 게임을 플레이할 때 유용한 기능을 모아놓은 디스코드 봇 입니다.
 
 * 구현 예정 기능
