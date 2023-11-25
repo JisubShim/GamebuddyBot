@@ -7,7 +7,7 @@ intents.typing = False
 intents.presences = False
 intents.message_content = True
 client = discord.Client(intents=intents)
-f = open('token.txt', 'r')
+f = open('token', 'r')
 token = f.readline() # 봇 토큰
 
 @client.event # 데코레이터
