@@ -1,14 +1,15 @@
 import discord
 from discord.ext import commands
 import random
+import os
 
 intents = discord.Intents.default()
 intents.typing = False
 intents.presences = False
 intents.message_content = True
 client = discord.Client(intents=intents)
-f = open('token', 'r')
-token = f.readline() # 봇 토큰
+# f = open('token', 'r')
+# token = f.readline() # 봇 토큰
 
 @client.event # 데코레이터
 async def on_ready(): # 비동기로 함수 선언
@@ -23,7 +24,7 @@ async def on_message(message):
         emb.add_field(name="!소개", value="현재 임베드창을 띄웁니다.", inline=True)
         emb.add_field(name="!사다리타기", value="사다리타기 게임을 진행합니다.", inline=True)
         await message.channel.send(embed=emb)
-client.run(token)
+client.run(os.environ['token'])
 # def ladder_game(participants, results):
 #     """
 #     사다리타기 게임 구현.
