@@ -23,18 +23,18 @@ async def on_message(message):
         emb.add_field(name="!소개", value="현재 임베드창을 띄웁니다.", inline=True)
         emb.add_field(name="!사다리타기", value="사다리타기 게임을 진행합니다.", inline=True)
         await message.channel.send(embed=emb)
-
-def ladder_game(participants, results):
-    """
-    사다리타기 게임 구현.
-    :param participants: 참가자 목록 (리스트).
-    :param results: 결과 목록 (리스트). 참가자 수와 동일해야 함.
-    :return: 각 참가자에 대한 결과를 담은 딕셔너리.
-    """
-    if len(participants) != len(results):
-        return "참가자 수와 결과 수가 일치하지 않습니다."
-    random.shuffle(results)
-    return dict(zip(participants, results))
+client.run(token)
+# def ladder_game(participants, results):
+#     """
+#     사다리타기 게임 구현.
+#     :param participants: 참가자 목록 (리스트).
+#     :param results: 결과 목록 (리스트). 참가자 수와 동일해야 함.
+#     :return: 각 참가자에 대한 결과를 담은 딕셔너리.
+#     """
+#     if len(participants) != len(results):
+#         return "참가자 수와 결과 수가 일치하지 않습니다."
+#     random.shuffle(results)
+#     return dict(zip(participants, results))
 
 # bot = commands.Bot(command_prefix='!')
 
@@ -52,5 +52,5 @@ def ladder_game(participants, results):
 
 # # 봇 토큰으로 봇 실행
 # bot.run(token)
-client.run(token) # 봇을 온라인으로 전환해주는 코드 (항상 맨 아래 위치)
+ # 봇을 온라인으로 전환해주는 코드 (항상 맨 아래 위치)
 
