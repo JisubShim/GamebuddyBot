@@ -5,7 +5,7 @@ intents.typing = False
 intents.presences = False
 intents.message_content = True
 client = discord.Client(intents=intents)
-token = "MTE3NzkwMjcxNjM4Nzg1MjM4MQ.GuWV5k.jmtjnxll_5coj3QDekGuQrFfO8XKBptbdIFHoc" # 봇 토큰
+token = "MTE3NzkwMjcxNjM4Nzg1MjM4MQ.GmEQVI.2hDUCj-5qZKh2Tcrk7D2HorLCawhk7G39ujOcE" # 봇 토큰
 
 @client.event # 데코레이터
 async def on_ready(): # 비동기로 함수 선언
