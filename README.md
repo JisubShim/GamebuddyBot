@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Game%20Buddy%20Bot&fontSize=32)
+# Game Buddy Bot
 ======================
 ## 프로젝트 개발자
 | 학과         | 학번     | 이름   |
@@ -20,7 +20,9 @@
 - 딱딱한 말투의 봇에 질리신 분!
 
 **제가 도와드리겠습니다**   
-<img src="https://drive.google.com/uc?id=1j0EFLE3MKqKgtwfllLbj5GwetKofquZC"/>
+<img src="https://drive.google.com/uc?id=1j0EFLE3MKqKgtwfllLbj5GwetKofquZC"/>   
+
+*GameBuddyBot의 대표이미지*
 
 ## 프로젝트 실행 방법
 
@@ -37,8 +39,8 @@
 - 승인!   
 **꼭! 봇이 관리자 권한을 사용할 수 있게 해주어야합니다!**
 
-*GameBuddyBot은 repl.it과 UptimeRobot에 의해 배포되어 24시간 구동되고 있습니다.*   
-**혹시 오프라인이라면 소스코드로 봇을 실행해주세요.**   
+*GameBuddyBot은 24시간 구동되고 있습니다.*   
+**하지만 혹시라도 오프라인이라면 소스코드로 봇을 실행해주세요.**   
 **두 방법 전부 실행이 안된다면 jisub5322@naver.com으로 연락 주시기 바랍니다.**   
 
 ## 구현 기능
@@ -60,6 +62,8 @@
 > 개발에 사용된 ai 모델은 gpt-3.5-turbo-1106 입니다.
 
 > GameBuddyBot은 repl.it과 UptimeRobot에 의해 배포되어 24시간 구동되고 있습니다.
+
+> GameBuddyBot의 대표이미지는 친구(백OO)가 제공해주었습니다^^
 
 ## 참고 자료
 - [유튜브 : 섹시베이비](https://www.youtube.com/@user-mh7ib3xc9c)   
