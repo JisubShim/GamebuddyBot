@@ -68,27 +68,10 @@ async def on_guild_join(guild):
     for channel in guild.text_channels:
         if channel.permissions_for(guild.me).send_messages:
             await channel.send('안녕 안녕~ 만나서 반가워! 우리 앞으로 잘지내보자!!')
-            await channel.send('"!도움"을 보내면 내가 뭘 할 수 있는지 알려주지! 히히')
             await channel.send(embed=send_help_message())
             break
 
-# 서버에 멤버가 들어왔을 때 수행 될 이벤트
-@client.event
-async def on_member_join(self, member):
-        msg = "<@{}>님이 서버에 들어오셨어요. 환영합니다.".format(str(member.id))
-        await find_first_channel(member.guild.text_channels).send(msg)
-        return None
-
-
-
-
-@client.event
-async def on_member_remove(self, member):
-        msg = "<@{}>님이 서버에서 나가거나 추방되었습니다.".format(str(member.id))
-        await find_first_channel(member.guild.text_channels).send(msg)
-        return None
-
-
+  
 @client.event
 async def on_message(message):
     if message.author.bot: return # 메세지 보낸 사람이 봇이면 무시
