@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 from crawling import get_steam_games
 from openai_func import create_thread_message, check_run_status, initialize_thread, recreate_assistant
 from keep_alive import keep_alive
+from help import send_help_message
 
 # 디스코드 봇 intent 설정
 intents = discord.Intents.default()
@@ -48,24 +49,45 @@ ai_client = OpenAI(
     api_key = OPENAI_API_KEY
 )
 
+def find_first_channel(channels):
+    position_array = [i.position for i in channels]
+
+    for i in channels:
+        if i.position == min(position_array):
+            return i
+
 @client.event # 데코레이터
 async def on_ready(): # 비동기로 함수 선언
     print("반가워 친구!")
     await client.change_presence(status = discord.Status.online, activity = discord.Game('"!도움"으로 나를 불러달라고')) # 상태메세지 설정
-    keep_alive() # replit에 배포 (24시간 구동)
+    #keep_alive() # replit에 배포 (24시간 구동)
     print('keep_alive() started')
 
-    # 서버에 멤버가 들어왔을 때 수행 될 이벤트
-    async def on_member_join(self, member):
-        msg = "<@{}>! 내 친구가 된걸 환영해!".format(str(member.id))
+@client.event
+async def on_guild_join(guild):
+    for channel in guild.text_channels:
+        if channel.permissions_for(guild.me).send_messages:
+            await channel.send('안녕 안녕~ 만나서 반가워! 우리 앞으로 잘지내보자!!')
+            await channel.send('"!도움"을 보내면 내가 뭘 할 수 있는지 알려주지! 히히')
+            await channel.send(embed=send_help_message())
+            break
+
+# 서버에 멤버가 들어왔을 때 수행 될 이벤트
+@client.event
+async def on_member_join(self, member):
+        msg = "<@{}>님이 서버에 들어오셨어요. 환영합니다.".format(str(member.id))
         await find_first_channel(member.guild.text_channels).send(msg)
         return None
 
-    # 사버에 멤버가 나갔을 때 수행 될 이벤트
-    async def on_member_remove(self, member):
-        msg = "<@{}>! 잘가!".format(str(member.id))
+
+
+
+@client.event
+async def on_member_remove(self, member):
+        msg = "<@{}>님이 서버에서 나가거나 추방되었습니다.".format(str(member.id))
         await find_first_channel(member.guild.text_channels).send(msg)
         return None
+
 
 @client.event
 async def on_message(message):
@@ -84,21 +106,7 @@ async def on_message(message):
         await message.channel.send(f"반가워,{mar} {message.author.display_name}! 😊")
 
     elif cmd == "도움":
-        embed=discord.Embed(title="안녕! 나는 GameBuddy야! 🎮",
-                            description="게임할 때 도움이 필요하면, 아래 명령어들로 나를 불러줘!", 
-                            color=0x0400ff)
-        embed.set_thumbnail(url="https://drive.google.com/uc?id=1j0EFLE3MKqKgtwfllLbj5GwetKofquZC")  # 봇 이미지 URL
-        embed.add_field(name="명령어 설명", value="!도움", inline=False)
-        embed.add_field(name="인사하기", value="!안녕", inline=False)
-        embed.add_field(name="사다리타기", value="!사다리타기 윗줄1 윗줄2 윗줄3 / 아랫줄1 아랫줄2 아랫줄3", inline=False)
-        embed.add_field(name="투표하기", value="!투표 제목/옵션1/옵션2/옵션3 *옵션은 최대 9개*", inline=False)
-        embed.add_field(name="랜덤선택", value="!랜덤 옵션1 옵션2 옵션3", inline=False)
-        embed.add_field(name="대화하기", value="!대화 대화내용", inline=False)
-        embed.add_field(name="대화 Thread 초기화", value="!기억초기화", inline=False)
-        embed.add_field(name="신규 게임 추천(STEAM)", value="!신규게임", inline=False)
-        embed.add_field(name="할인 게임 추천(STEAM)", value="!할인게임", inline=False)
-        embed.set_footer(text="언제든 불러줘~ 나 심심해~ 뿅!")
-        await message.channel.send(embed=embed)
+        await message.channel.send(embed=send_help_message())
 
     elif cmd == "사다리타기":
         # 사용자의 메시지 파싱
