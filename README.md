@@ -13,7 +13,7 @@
 어느때와 다름없이 그의 노트북 화면 앞에 앉아 있던 어느 날 밤, 그는 갑자기 영감을 받았습니다. **'우리가 함께 즐길 게임을 결정하는 데 도움을 줄 수 있는 봇을 만들면 어떨까?'**   
 그리고 그는 혼잣말처럼 중얼거렸습니다.
     
-#### "이왕이면 친구처럼..!"    
+### "이왕이면 친구처럼..!"    
 그 순간, 그의 머릿속에는 코드와 알고리즘, 인터페이스의 이미지가 스쳐 지나갔습니다.
 
 
@@ -42,14 +42,14 @@
 - 본인 서버에 아래 링크를 통해 봇을 초대할 수 있습니다.
 - [초대 링크](https://discord.com/api/oauth2/authorize?client_id=1177902716387852381&permissions=8&scope=bot)
 - '서버에 추가' 에서 봇을 추가하려는 서버를 선택 후 계속하기  
-![1](https://github.com/JisubShim/GamebuddyBot/assets/118372554/219f743a-3254-45d0-9cb5-553c519b5311)
+![1](https://github.com/JisubShim/GamebuddyBot/assets/118372554/219f743a-3254-45d0-9cb5-553c519b5311)   
 
-- '관리자'에 체크하고, 승인 누르기
+- '관리자'에 체크하고, 승인 누르기   
 ![캡처](https://github.com/JisubShim/GamebuddyBot/assets/118372554/77c08a31-b5aa-4bfc-80fb-656a78ae580d)   
 **꼭! 봇이 관리자 권한을 사용할 수 있게 해주어야합니다!**
 <br>
 
-- 마지막으로 원하는 서버에 초대되었는지 확인하기
+- 마지막으로 원하는 서버에 초대되었는지 확인하기   
 ![등장](https://github.com/JisubShim/GamebuddyBot/assets/118372554/531d03f3-686d-4b5e-8d48-cda9b74b9b1f)   
 *초대 되었을 때 메세지*
 <br>
@@ -66,39 +66,39 @@
 **호스팅 중에 소스코드로도 실행하면 디스코드 봇이 중복 대답하므로, 이미 온라인이라면 소스코드로 실행하는 것은 권장하지 않습니다.**   
 
 ## 구현 기능🕹️
-1. **명령어 설명** : GameBuddy와 소통하기 위한 명령어를 설명해줍니다.
+1. **명령어 설명** : GameBuddy와 소통하기 위한 명령어를 설명해줍니다.   
 ![!도움](https://github.com/JisubShim/GamebuddyBot/assets/118372554/d8596d98-369e-4207-a3d5-76ce2c0cde19)   
 <br>
 
-2. **인사하기** : GameBuddy와 인사합니다.
+2. **인사하기** : GameBuddy와 인사합니다.   
 ![!안녕](https://github.com/JisubShim/GamebuddyBot/assets/118372554/c50c37d5-6c55-4754-8e6d-ffb68ccf835d)
 <br>
 
-3. **사다리타기** : 게임 순서나 역할(포지션) 등을 결정하기 위해 무작위로 사다리타기를 진행합니다.
+3. **사다리타기** : 게임 순서나 역할(포지션) 등을 결정하기 위해 무작위로 사다리타기를 진행합니다.   
 ![!사다리타기](https://github.com/JisubShim/GamebuddyBot/assets/118372554/f18e6a1d-c181-418d-ba49-1c065167d682)
 <br>
 
-4. **투표** : 어떤 게임을 할지, 어떤 규칙을 적용할지 등 사용자들이 투표할 수 있습니다.   
+4. **투표** : 어떤 게임을 할지, 어떤 규칙을 적용할지 등 사용자들이 투표할 수 있습니다.     
 ![!투표](https://github.com/JisubShim/GamebuddyBot/assets/118372554/8287baab-fd99-44ea-bb1f-170ee8c93697)
 <br>
 
-6. **랜덤 선택** : 여러가지 중 하나를 무작위로 선택해줍니다.
+6. **랜덤 선택** : 여러가지 중 하나를 무작위로 선택해줍니다.   
 ![!랜덤](https://github.com/JisubShim/GamebuddyBot/assets/118372554/28bceb33-2073-443c-9f7c-86eadd4a6ad4)
 <br>
 
-7. **대화하기** : GameBuddyBot과 대화합니다. (openAI assistant API 사용)
+7. **대화하기** : GameBuddyBot과 대화합니다. (openAI assistant API 사용)   
 ![!대화](https://github.com/JisubShim/GamebuddyBot/assets/118372554/b65284d1-a56d-47bf-9015-9c597d69a9b3)   
 <br>
 
-8. **기억초기화** : GameBuddyBot이 지금까지 한 대화 내용을 잊어버립니다.
+8. **기억초기화** : GameBuddyBot이 지금까지 한 대화 내용을 잊어버립니다.   
 ![!기억초기화](https://github.com/JisubShim/GamebuddyBot/assets/118372554/8cf5a47f-03ae-4489-a220-cdfdc90ed6eb)
 <br>
 
-9. **신규 게임 추천(STEAM)** : STEAM의 신규 게임 중 10개를 보여줍니다.
+9. **신규 게임 추천(STEAM)** : STEAM의 신규 게임 중 10개를 보여줍니다.   
 ![ezgif com-video-to-gif](https://github.com/JisubShim/GamebuddyBot/assets/118372554/fd5417fa-282c-449c-9960-6785a27ca7ca)
 <br>
 
-10. **할인 게임 추천(STEAM)** : STEAM의 할인 게임 중 10개를 보여줍니다.
+10. **할인 게임 추천(STEAM)** : STEAM의 할인 게임 중 10개를 보여줍니다.   
 ![ezgif com-video-to-gif (1)](https://github.com/JisubShim/GamebuddyBot/assets/118372554/afdc28e7-f431-4185-ba51-7370b0c15a45)
 <br>
 
