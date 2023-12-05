@@ -129,7 +129,7 @@
 >>OpenAI Assistants API 사용법을 배우고, 구현에 참고했습니다.
 
 > [네이버 블로그 : 코코블루](https://blog.naver.com/PostView.naver?blogId=6116949&logNo=221949748751&redirect=Dlog&widgetTypeCall=true&directAccess=false)   
->>서버에 멤버가 들어왔을 때와 나갔을 때 수행 될 이벤트를 구현하기 위해 코드를 거의 동일하게 적용했습니다.
+>>GameBuddyBot이 서버에 들어왔을 때 수행 될 이벤트를 구현하기 위해 코드를 거의 동일하게 적용했습니다.
 
 > [velog : seulki971227](https://velog.io/@seulki971227/%ED%8C%8C%EC%9D%B4%EC%8D%AC%ED%81%AC%EB%A1%A4%EB%A7%81-%EC%8A%A4%ED%8C%80%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80-%ED%81%AC%EB%A1%A4%EB%A7%811)   
 >>스팀 홈페이지 크롤링을 할 때 많은 도움이 되었고, 참고하였습니다.
