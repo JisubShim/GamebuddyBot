@@ -139,6 +139,9 @@
 > [GitHub : NyaNyak/discord-beebot](https://github.com/NyaNyak/discord-beebot)   
 >> GameBuddyBot의 아이디어를 생각해내는데 많은 도움이 되었습니다. 또 README작성 양식도 일부 참고하였습니다.
 
+> [네이버 블로그 : 리니](https://blog.naver.com/PostView.nhn?blogId=yerin1211&logNo=223095668159)
+>> repl.it 호스팅할 때 참고하였습니다.
+
 - **디스코드 서버 "[Korean Discord Dictionary (KDD)](https://discord.com/invite/korean-discord-dictionary-kdd-642630345967271946)"의 BOT:개발강의로 공부하고 개발한 프로젝트입니다.**
 
 
