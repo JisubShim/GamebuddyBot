@@ -1,11 +1,7 @@
-# Game Buddy Bot
-
-## 프로젝트 개발자🧑‍💻
-| 학과         | 학번     | 이름   |
-| ------------ | -------- | ----- |
-| 컴퓨터공학과 | 20101252 | 심지섭 |
-
-- 개인 프로젝트로 진행
+## 프로젝트🧑‍💻
+- 프로젝트명 : Game Buddy Bot
+- 주제 : Discord Bot
+- 개인 프로젝트
   
 ## 프로젝트 설명📚
 - **GameBuddy (게임 친구)**   
@@ -49,11 +45,12 @@
 ### **소스코드로 봇 실행 방법**   
 1. git clone 하여 로컬 레포지토리로 들여온다.
 2. token.txt 파일을 main.py와 같은 위치에 추가한다.
-(보안상의 이유로 token.txt 파일은 없습니다.)
+(token.txt 파일은 제공하지 않습니다.)
 3. main.py를 실행한다.
 <br>
 
-**호스팅 중에 소스코드로도 실행하면 디스코드 봇이 중복 대답하므로, 이미 온라인이라면 소스코드로 실행하는 것은 권장하지 않습니다.**   
+**호스팅 중에 소스코드로도 실행하면 디스코드 봇이 중복 대답하므로, 이미 온라인이라면 소스코드로 실행하는 것은 권장하지 않습니다.**
+2024.03.05 추가 : 현재는 내려서 오프라인 상태입니다.
 
 ## 구현 기능🕹️
 1. **명령어 설명** : GameBuddy와 소통하기 위한 명령어를 설명해줍니다.   
@@ -125,9 +122,6 @@
 > [GitHub Gist : ihoneymon/how-to-write-by-markdown.md](https://gist.github.com/ihoneymon/652be052a0727ad59601)   
 >>README 작성에 참고 하였습니다.
 
-> [GitHub : NyaNyak/discord-beebot](https://github.com/NyaNyak/discord-beebot)   
->> GameBuddyBot의 아이디어를 생각해내는데 많은 도움이 되었습니다. 또 README작성 양식도 일부 참고하였습니다.
-
 > [네이버 블로그 : 리니](https://blog.naver.com/PostView.nhn?blogId=yerin1211&logNo=223095668159)
 >> repl.it 호스팅할 때 참고하였습니다.
 
@@ -137,10 +131,10 @@
 
 ## 프로젝트를 하며 얻은 것😃
 - 파이썬 개발 경험
-- Discord Bot API, OpenAI Assistants API의 사용법 학습 및 적용
-- 웹 크롤링 학습 및 적용
 - github 사용 경험
-- 
+- Discord Bot API, OpenAI Assistants API의 사용법 적용
+- 웹 크롤링 적용
+
 #### 감사합니다!😆
 
 *오류 및 버그 수정 문의 : jisub5322@naver.com*
